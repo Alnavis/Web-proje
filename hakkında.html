@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaCar's - Hakkında</title>
+  <link rel="stylesheet" href="hakkında.css">
+  <link rel="shortcut icon" type="image/png" href="img/logo2.png"/>
+  
+</head>
+<body>
+  <header>
+    <a href="Untitled-1.html">
+      <img src="img/logo1.jpg.jpg" alt="MaCar's Logo" class="logo">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><button onclick="showSection('neden')">Neden MaCar's?</button></li>
+      <li><button onclick="showSection('iletisim')">İletişim</button></li>
+    </ul>
+  </nav>
+
+  <section id="icerik">
+    <div id="neden" class="section-content active">
+      <h2>Neden MaCar's?</h2>
+      <hr />
+      <ul>
+        <li>Geniş araç filosu</li>
+        <li>Kaliteli ve güvenilir hizmet</li>
+        <li>Uygun fiyatlar</li>
+        <li>Günlük ve haftalık kiralama seçenekleri</li>
+        <li>Müşteri memnuniyeti odaklı yaklaşım</li>
+      </ul>
+    </div>
+    <div id="iletisim" class="section-content" style="display:none;">
+      <h2>İletişim</h2>
+      <hr />
+      <p>MaCar's oto kiralama hizmetleri hakkında daha fazla bilgi almak veya rezervasyon yapmak için bizimle iletişime geçebilirsiniz:</p>
+      <ul class="contact-info">
+        <li>Telefon: 0553 149 69 06</li>
+        <li>E-posta: macars@gmail.com</li>
+        <li>Adres: Örnek Mah. Örnek Cad. No:123, Örnek Şehir, Türkiye</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright © 2024 | <a href="https://macars.com.tr">macars.com.tr</a> | Tüm Hakları Saklıdır.</p>
+  </footer>
+
+  <script src="java.js"></script>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+  }
+  
+  header {
+    background: #ffffff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav {
+
+    color: #fff;
+    overflow: hidden;
+
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li button {
+   padding: 10px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor:pointer;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+
+  }
+  
+  nav ul li button:hover {
+    color: #f9f9f9;
+    background-color: #000000;
+    transition: ease 0.5s ;
+    border: 1px solid rgb(0, 0, 0);
+    
+  }
+  
+  #icerik {
+    padding: 20px;
+    min-height: 400px;
+  }
+  
+  .section-content {
+    display: none;
+  }
+  
+  .section-content.active {
+    display: block;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer a {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  </style>
+</body>
+</html>
